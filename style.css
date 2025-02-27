@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Background of the page*/
+body{
+    background: rgba(92, 199, 215, 0.718);
+}
+
+/*Background of the Question and Answer box*/
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/*Quiz Header "Boston Bruins Quiz"*/
+.app h1{
+    font-size: 50px;
+    color: rgb(132, 27, 101);
+    font-weight: 600;
+    border-bottom: 1px solid #030000;
+    padding-bottom: 30px;
+    text-shadow:  1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px -1px 0 #000;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+/*Question "Which player wore..?"*/
+.quiz h2{
+    font-size: 18px;
+    color: rgb(72, 88, 228);
+    font-weight: 600;
+
+}
+
+/*Answers*/
+.btn{
+    background: #6da7ee;
+    color: #000000;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 9px;
+    cursor:grab;
+    transition: all 0.3s;
+}
+
+/*Hover for the answer buttons (before answer is slected*/
+.btn:hover:not([disabled]){
+    background: rgb(169, 206, 236);
+    color: rgb(6, 1, 104);
+}
+
+/*Button Hover disabled after answer is chosen*/
+.btn:disabled{
+    cursor: no-drop
+}
+
+/*Next Button*/
+#next-btn{
+    background: #001e4d;
+    color: #f09595;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    display: none;
+}
+
+/*Answer Image*/
+#answer-image{
+    background: white;
+    width: 550px;
+    border: 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    display: none;
+}
+
+#caption{
+    background: white;
+    color: black;
+    font-weight: 800;
+    font-size: small;
+    display: block;
+    display: none;
+}
+
+figure{
+    padding-bottom: 10px;
+}
+
+.correct{
+    background: rgb(118, 221, 118);
+}
+
+.incorrect{
+    background: rgb(235, 106, 106);
+}
