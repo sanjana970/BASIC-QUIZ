@@ -1,56 +1,67 @@
 # BASIC-QUIZ
-This is a simple quiz application designed for beginners, built using JavaScript. The app dynamically displays multiple-choice questions, processes user responses, and provides instant feedback on correctness. It was initially inspired by a YouTube tutorial from GreatStack (Video Link), but has been customized with several modifications.
+
+This Quiz App is designed for students and enthusiasts who want to test their knowledge in Data Structures & Algorithms (DSA), Computer Networks (CN), and Operating Systems (OS). The app presents multiple-choice questions with images and captions to enhance learning.
 
 Features
 
-Boston Bruins Theme: The app is styled with black and gold colors to match the identity of the Boston Bruins, the developer's favorite hockey team.
+Multiple-choice questions on DSA, CN, and OS topics.
 
-Custom Questions: All quiz questions are based on Bruins trivia instead of generic topics.
+Interactive UI with dynamic question rendering.
 
-Image and Caption Functionality: A new feature has been added where an image and caption pop up after answering a question, explaining the correct answer.
+Images and captions to explain correct answers.
 
-Dynamic Question Handling: Questions are displayed dynamically, and users receive feedback after selecting an answer.
+Score tracking to monitor performance.
 
-Score Tracking: The app keeps track of the user's score and displays the final result at the end of the quiz.
-
-Play Again Feature: Users can restart the quiz after completing it.
-
-How It Works
-
-The app presents a series of multiple-choice questions.
-
-Users select an answer, and feedback is immediately displayed.
-
-The correct answer is highlighted after selection.
-
-An image and caption appear to explain the correct answer.
-
-At the end of the quiz, the user's score is displayed.
-
-Users can restart the quiz by clicking the "Play Again" button.
+Next question navigation for seamless learning.
 
 Technologies Used
 
-HTML
+HTML for structuring the app.
 
-CSS
+CSS for styling and user experience.
 
-JavaScript
+JavaScript for dynamic content and logic.
 
-Installation & Usage
+How It Works
 
-Clone this repository or download the source code.
+The quiz starts with the first question.
 
-Open the index.html file in a web browser.
+Users select an answer from the given options.
 
-Start answering the quiz questions and enjoy!
+The correct answer is highlighted, and an image with a caption appears for explanation.
 
-Future Improvements
+Clicking "Next" moves to the next question.
 
-Adding a timer for each question.
+At the end, the total score is displayed.
 
-Storing high scores using local storage.
+Code Breakdown
 
-Expanding the question set with more Bruins-related trivia.
+questions array: Stores quiz questions, options, correct answers, and images.
 
-Enjoy testing your Bruins knowledge with this fun and interactive quiz app!
+showQuestion(): Displays the current question and answer choices.
+
+selectAnswer(): Validates user input, highlights the correct answer, and shows an image with an explanation.
+
+handleNextButton(): Moves to the next question or displays the final score.
+
+Future Enhancements
+
+Add a timer for each question.
+
+Include more questions and categories.
+
+Implement a leaderboard to track top scores.
+
+Allow users to review their answers after completing the quiz.
+
+Getting Started
+
+Clone this repository.
+
+Open index.html in a browser.
+
+Start answering questions and test your knowledge!
+
+Contributions
+
+Feel free to contribute by adding new questions, improving UI, or optimizing the code. Fork the repository and submit a pull request!
